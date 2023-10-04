@@ -73,22 +73,22 @@ const Header = ()=>{
         <Container>
           <Navbar.Brand href="/">Home</Navbar.Brand>
           <Nav className="me-auto">
-              <Nav.Link href="/movies" className={styles.navlinksmall}>Movies</Nav.Link>
-              <Nav.Link href="/play" className={styles.navlinksmall} >Plays</Nav.Link>
-              <Nav.Link href="/food" className={styles.navlinksmall}>Food</Nav.Link>
+              <Nav.Link href="/movies" className={styles.navlinksmall}>List</Nav.Link>
+              <Nav.Link href="/play" className={styles.navlinksmall} >Signup</Nav.Link>
+              {/* <Nav.Link href="/food" className={styles.navlinksmall}>Food</Nav.Link> */}
                        <Nav.Link href="/contactus" className={styles.navlinksmall}>ContactUs</Nav.Link>
             
           </Nav>
-          {/* {!uname && (
+           {/* {!uname && ( */}
+
       <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            User Signup/Login : <a href="/usersignup">Here</a>
+            User Signup/Login : 
+            <a href="/usersignup">Here</a>
           </Navbar.Text>
         </Navbar.Collapse> 
-        )
-         
-        }
-         {uname && (
+        {/* )  } */}
+         {/* {uname && (
       <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             User :  {uname} || 
@@ -101,7 +101,7 @@ const Header = ()=>{
         </Navbar.Collapse> 
         )
           
-        }  */}
+        }   */}
         </Container>
       </Navbar>
  

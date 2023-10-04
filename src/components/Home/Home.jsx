@@ -1,3 +1,4 @@
+import Button from "react-bootstrap/esm/Button";
 import Header from "../Header/Header"
 import Carousel from 'react-bootstrap/Carousel';
 const Home = ()=>{
@@ -45,8 +46,18 @@ const Home = ()=>{
     <hr/>
     <h3>Welcome To The Restaurants Place</h3>
 <hr/>
+<br/>
+<h5>List Your Restaurant here and get boost your business twice.</h5>
+<br/>
+<div>
+<p>click here ... to add your restaurant.</p>
+<Button className="mb-3 mt-1">Add</Button>
 
 
+</div>
+ <br/>
+  <br/>
+   <br/>
     
     </>)
 }
