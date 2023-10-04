@@ -1,71 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-// import routes from './../Routes/routes.json'
-// import {  useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
-// import {useState,useEffect} from 'react'
-// import { useNavigate} from 'react-router-dom';
 import styles from './Header.module.css'
 const Header = ()=>{
 
-//   const [oname,setOname] = useState('')
-  
-//    const navigate = useNavigate()
-
-//   const [uname,setUname] = useState('')
-
-//  const name1 = useSelector((state) => {
-     
-//     return (state.user.Oname)
-//   })
-
-//    const name2 = useSelector((state) => {
-   
-//     return (state.user.Uname)
-//   })
-
-  
-//   useEffect(()=>{
-//      setOname(name1)
-//     setUname(name2)
-//   },[name1,name2])
-
-
-// const logoutHandler = ()=>{
-//   setOname('')
-//   setUname('')
-//   navigate('/')
-// }
-  
-
+    
   return(<>
         <Navbar className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home"><h3>The Restaurants Place</h3></Navbar.Brand>
         <Navbar.Toggle />
-        {/* {!oname && (
-      <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Owner Signup/Login :  <a href="/ownersignup">Here</a>
-          </Navbar.Text>
-        </Navbar.Collapse> 
-        )
-         
-        }
-         {oname && (
-      <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Owner : "{oname}" || 
-          </Navbar.Text>
-       
-         <Navbar.Text>
-            <Button onClick={logoutHandler} variant="danger">Logout</Button>
-          </Navbar.Text>
-        </Navbar.Collapse> 
-        )
-          
-        } */}
+      
        
       </Container>
     </Navbar>
@@ -75,11 +21,11 @@ const Header = ()=>{
           <Nav className="me-auto">
               <Nav.Link href="/movies" className={styles.navlinksmall}>List</Nav.Link>
               <Nav.Link href="/play" className={styles.navlinksmall} >Signup</Nav.Link>
-              {/* <Nav.Link href="/food" className={styles.navlinksmall}>Food</Nav.Link> */}
+             
                        <Nav.Link href="/contactus" className={styles.navlinksmall}>ContactUs</Nav.Link>
             
           </Nav>
-           {/* {!uname && ( */}
+           
 
       <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
@@ -87,21 +33,8 @@ const Header = ()=>{
             <a href="/usersignup">Here</a>
           </Navbar.Text>
         </Navbar.Collapse> 
-        {/* )  } */}
-         {/* {uname && (
-      <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            User :  {uname} || 
-          </Navbar.Text>
        
-         <Navbar.Text>
-          
-           <Button onClick={logoutHandler} variant="danger">Logout</Button>
-          </Navbar.Text>
-        </Navbar.Collapse> 
-        )
-          
-        }   */}
+       
         </Container>
       </Navbar>
  

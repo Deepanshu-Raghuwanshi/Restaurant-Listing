@@ -1,15 +1,18 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'
-// import '@fontsource/roboto/300.css';
 import Home from './components/Home/Home'
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 
 function App() {
  
   return (
     <>
-      <div id='root'>
-    <Home/>
+      <div id='root'> 
+    {/* <Home/> */}
+    {/* <Login/> */}
+    <Signup/>
       </div>
      
     </>
